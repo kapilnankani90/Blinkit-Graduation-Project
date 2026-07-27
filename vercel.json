@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://blinkit-backend-production.up.railway.app/api/:path*"
+      "destination": "https://web-production-246b7.up.railway.app/api/:path*"
     }
   ]
 }
