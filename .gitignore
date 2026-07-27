@@ -1,0 +1,27 @@
+# Secrets & Local Environment
+.env
+.env.local
+.env.*.local
+
+# Node modules & build outputs
+node_modules/
+dist/
+build/
+
+# Python virtual environment & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

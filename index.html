@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" style="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-secondary-container": "#c4abff",
+                            "on-tertiary-fixed": "#001a42",
+                            "tertiary-fixed-dim": "#adc6ff",
+                            "secondary-fixed-dim": "#d0bcff",
+                            "on-surface-variant": "#d8c3ad",
+                            "error-container": "#93000a",
+                            "on-surface": "#dfe2ef",
+                            "inverse-surface": "#dfe2ef",
+                            "outline-variant": "#534434",
+                            "on-primary-fixed-variant": "#653e00",
+                            "surface-container-lowest": "#0a0e17",
+                            "surface-container-low": "#181b25",
+                            "on-secondary": "#3c0091",
+                            "secondary-container": "#571bc1",
+                            "on-tertiary-container": "#00408f",
+                            "inverse-primary": "#855300",
+                            "surface-container": "#1c1f29",
+                            "tertiary": "#b6ccff",
+                            "surface-dim": "#0f131c",
+                            "error": "#ffb4ab",
+                            "surface-variant": "#31353f",
+                            "tertiary-container": "#8ab0ff",
+                            "inverse-on-surface": "#2c303a",
+                            "primary-fixed-dim": "#ffb95f",
+                            "on-secondary-fixed-variant": "#5516be",
+                            "tertiary-fixed": "#d8e2ff",
+                            "on-primary-container": "#613b00",
+                            "primary": "#ffc174",
+                            "on-error": "#690005",
+                            "background": "#0f131c",
+                            "secondary-fixed": "#e9ddff",
+                            "primary-container": "#f59e0b",
+                            "secondary": "#d0bcff",
+                            "primary-fixed": "#ffddb8",
+                            "on-tertiary": "#002e6a",
+                            "on-background": "#dfe2ef",
+                            "surface-tint": "#ffb95f",
+                            "outline": "#a08e7a",
+                            "on-primary": "#472a00",
+                            "surface-container-high": "#262a34",
+                            "surface-bright": "#353943",
+                            "surface": "#0f131c",
+                            "on-primary-fixed": "#2a1700",
+                            "on-tertiary-fixed-variant": "#004395",
+                            "surface-container-highest": "#31353f",
+                            "on-secondary-fixed": "#23005c",
+                            "on-error-container": "#ffdad6"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "margin-mobile": "20px",
+                            "margin-desktop": "48px",
+                            "container-padding": "32px",
+                            "max-width": "1400px",
+                            "gutter": "24px",
+                            "base-grid": "8px"
+                        },
+                        "fontFamily": {
+                            "headline-lg-mobile": ["Outfit"],
+                            "body-md": ["Inter"],
+                            "headline-md": ["Outfit"],
+                            "body-sm": ["Inter"],
+                            "body-lg": ["Inter"],
+                            "display-lg": ["Outfit"],
+                            "headline-sm": ["Outfit"],
+                            "headline-lg": ["Outfit"],
+                            "label-md": ["Inter"]
+                        },
+                        "fontSize": {
+                            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+                            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                        }
+                    },
+                },
+            }
+        } catch (_e) { }</script>
+</head>
+
+<body
+    class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- Section 1: Header & Nav -->
+    <header class="bg-background/80 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50">
+        <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-max-width mx-auto">
+            <div class="flex flex-col">
+                <div class="flex items-center gap-3">
+                    <span
+                        class="font-headline-lg text-headline-lg font-bold text-primary drop-shadow-[0_0_10px_rgba(245,158,11,0.4)]">BLINKIT&nbsp;</span>
+
+                </div>
+                <h1 class="font-headline-sm text-headline-sm text-on-surface mt-1">AI Discovery Engine</h1>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Qualitative Review Analysis Methodology</p>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex gap-8">
+
+
+
+                </div>
+                <div class="flex items-center gap-3">
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stepper Navigation -->
+    <nav class="bg-surface-container-low border-b border-white/5">
+        <div class="max-w-max-width mx-auto px-margin-desktop py-6 overflow-x-auto">
+            <div class="flex items-center justify-between min-w-[900px] relative">
+                <!-- Background Line -->
+                <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/10 -translate-y-1/2 -z-10"></div>
+
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">database</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Data Feed</span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">filter_alt</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">AI Filter</span>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">psychology</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Open Coding</span>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">hub</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Themes</span>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">explore</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Discovery</span>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">analytics</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Insights</span>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">lightbulb</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Hypotheses</span>
+                </div>
+
+                <!-- Step 8: ACTIVE / HIGHLIGHTED PRIMARY VALIDATION -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-10 h-10 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-bold shadow-lg shadow-emerald-500/30 scale-105">
+                        <span class="material-symbols-outlined text-sm">verified</span>
+                    </div>
+                    <span class="text-[11px] text-emerald-400 font-bold">⭐ Primary Validation</span>
+                </div>
+
+                <!-- Step 9 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-tertiary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-tertiary">target</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Opportunities</span>
+                </div>
+
+                <!-- Step 10 -->
+                <div class="flex flex-col items-center gap-1.5 group cursor-pointer">
+                    <div
+                        class="w-9 h-9 rounded-full bg-surface-container-highest border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
+                        <span
+                            class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-primary">rocket_launch</span>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant group-hover:text-on-surface">Product
+                        Strategy</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-max-width mx-auto px-margin-desktop py-12 space-y-12">
+
+        <!-- Section 1: Secondary & Primary Data Ingestion -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <span class="text-primary font-bold">1</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">Data Collection &amp; Ingestion</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                <div
+                    class="bg-surface-container-low p-4 rounded-lg flex items-center gap-3 border border-emerald-500/30">
+                    <div class="p-2 bg-emerald-500/10 rounded-lg"><span
+                            class="material-symbols-outlined text-emerald-400">assignment</span></div>
+                    <div>
+                        <p class="text-label-md text-emerald-400 font-bold">Survey Responses</p>
+                        <p class="text-headline-sm font-bold">7</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-container-low p-4 rounded-lg flex items-center gap-3 border border-emerald-500/30">
+                    <div class="p-2 bg-emerald-500/10 rounded-lg"><span
+                            class="material-symbols-outlined text-emerald-400">record_voice_over</span></div>
+                    <div>
+                        <p class="text-label-md text-emerald-400 font-bold">Interviews</p>
+                        <p class="text-headline-sm font-bold">7</p>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-lg flex items-center gap-3 border border-white/5">
+                    <div class="p-2 bg-primary/10 rounded-lg"><span
+                            class="material-symbols-outlined text-primary">shop</span></div>
+                    <div>
+                        <p class="text-label-md text-on-surface-variant">Play Store</p>
+                        <p class="text-headline-sm font-bold">2,000</p>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-lg flex items-center gap-3 border border-white/5">
+                    <div class="p-2 bg-secondary/10 rounded-lg"><span
+                            class="material-symbols-outlined text-secondary">groups</span></div>
+                    <div>
+                        <p class="text-label-md text-on-surface-variant">Community</p>
+                        <p class="text-headline-sm font-bold">130</p>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-lg flex items-center gap-3 border border-white/5">
+                    <div class="p-2 bg-tertiary/10 rounded-lg"><span
+                            class="material-symbols-outlined text-tertiary">chat</span></div>
+                    <div>
+                        <p class="text-label-md text-on-surface-variant">MouthShut</p>
+                        <p class="text-headline-sm font-bold">80</p>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-lg flex items-center gap-3 border border-white/5">
+                    <div class="p-2 bg-primary/10 rounded-lg"><span
+                            class="material-symbols-outlined text-primary">strategy</span></div>
+                    <div>
+                        <p class="text-label-md text-on-surface-variant">Strategy</p>
+                        <p class="text-headline-sm font-bold">37</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: AI Cleaning & Filtering -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <span class="text-primary font-bold">2</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">AI Cleaning &amp; Noise Filtering</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Stat Cards Cluster -->
+                <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="glass-panel p-6 rounded-xl flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-2 opacity-10">
+                            <span class="material-symbols-outlined text-6xl">database</span>
+                        </div>
+                        <span class="font-label-md text-label-md text-on-surface-variant">Total Volume</span>
+                        <h3 class="font-display-lg text-display-lg text-on-surface mt-2">2,252</h3>
+                        <div class="flex items-center text-emerald-400 text-sm font-bold gap-1 mt-4"></div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col justify-between">
+                        <span class="font-label-md text-label-md text-on-surface-variant">Noise Ratio</span>
+                        <h3 class="font-display-lg text-display-lg text-primary mt-2">54.5%</h3>
+                        <div class="flex items-center text-on-surface-variant text-sm mt-4">
+                            System Default Threshold
+                        </div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col justify-between">
+                        <span class="font-label-md text-label-md text-on-surface-variant">Research Subset</span>
+                        <h3 class="font-display-lg text-display-lg text-on-surface mt-2">1,024</h3>
+                        <div class="flex items-center text-on-surface-variant text-sm mt-4">
+                            Qualified Reviews
+                        </div>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col justify-between border-primary/20">
+                        <span class="font-label-md text-label-md text-on-surface-variant">Discovery Channels</span>
+                        <h3 class="font-display-lg text-display-lg text-on-surface mt-2">6</h3>
+                        <div class="flex items-center text-tertiary text-sm mt-4">
+                            Aggregated Data
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noise Donut -->
+                <div class="lg:col-span-4 glass-panel p-6 rounded-xl flex flex-col items-center justify-center">
+                    <div class="relative w-40 h-40">
+                        <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-surface-container-highest"
+                                stroke-width="3"></circle>
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-primary" stroke-width="3"
+                                stroke-dasharray="54.5 100"></circle>
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <span class="text-headline-sm font-bold text-on-surface">54.5%</span>
+                            <span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Noise</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-label-md text-on-surface-variant">Excluded</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+                            <span class="text-label-md text-on-surface-variant">Retained</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="lg:col-span-12">
+                <details class="glass-panel rounded-xl group overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-white/5 transition-colors">
+                        <span class="font-headline-sm text-on-surface flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">search</span>
+                            Click to View Filtering Criteria &amp; Rationale
+                        </span>
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 border-t border-white/5 bg-surface-container-lowest/50">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-4">
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-primary flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm">filter_list_off</span> Exclusion
+                                    Logic
+                                </h4>
+                                <p class="text-on-surface-variant leading-relaxed">
+                                    Reviews discussing only delivery delays, missing items, or transaction failures were
+                                    excluded from this qualitative engine as they represent operational noise rather
+                                    than behavioral discovery signals.
+                                </p>
+                            </div>
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-emerald-400 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm">check_circle</span> Retention Logic
+                                </h4>
+                                <p class="text-on-surface-variant leading-relaxed">
+                                    Only reviews discussing shopping behavior, product choice drivers, intent, or
+                                    recurring ritual habits were retained to populate the discovery dataset.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Section 3: AI Open Coding (Stage 3) -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <span class="text-primary font-bold">3</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">AI Open Coding Engine</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Coding Input -->
+                <div class="lg:col-span-7 glass-panel p-8 rounded-2xl space-y-6">
+                    <div class="space-y-2">
+                        <label class="font-label-md text-on-surface-variant uppercase tracking-widest">Input Analysis
+                            Node</label>
+                        <div class="relative">
+                            <textarea id="opencoding-input"
+                                class="w-full bg-surface-container-highest border-none rounded-xl p-6 text-on-surface placeholder:text-on-surface-variant focus:ring-2 focus:ring-primary h-48 resize-none"
+                                placeholder="✍️ Write / Paste Customer Review here..."></textarea>
+                            <div class="absolute bottom-4 right-4">
+                                <button id="btn-analyze-opencoding" onclick="analyzeCustomReview()"
+                                    class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold shadow-lg shadow-primary/20 flex items-center gap-2 hover:brightness-110 transition-all cursor-pointer">
+                                    <span class="material-symbols-outlined text-sm">auto_awesome</span> Process Review
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <span class="text-label-md text-on-surface-variant">Recommended Sample Prompts (Real Scraped Data):</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span onclick="fillOpenCodingSample(1)"
+                                class="px-3 py-1 bg-surface-container-highest rounded-full text-sm hover:bg-primary/20 hover:text-primary transition-colors cursor-pointer">⚡
+                                9-Min Late Night Staples</span>
+                            <span onclick="fillOpenCodingSample(2)"
+                                class="px-3 py-1 bg-surface-container-highest rounded-full text-sm hover:bg-primary/20 hover:text-primary transition-colors cursor-pointer">💸
+                                Handling Fee & Competitor Churn</span>
+                            <span onclick="fillOpenCodingSample(3)"
+                                class="px-3 py-1 bg-surface-container-highest rounded-full text-sm hover:bg-primary/20 hover:text-primary transition-colors cursor-pointer">🥦
+                                Fresh Produce Quality Variance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Node Container -->
+                <div id="opencoding-container" class="lg:col-span-5 flex flex-col h-full">
+                    <!-- Rendered dynamically by app.js -->
+                    <div
+                        class="glass-panel p-8 rounded-2xl flex flex-col h-full bg-gradient-to-br from-surface-container-low to-surface-container-highest justify-center items-center text-center space-y-4">
+                        <span class="material-symbols-outlined text-4xl text-on-surface-variant">psychology</span>
+                        <h4 class="font-headline-sm text-on-surface font-semibold">Awaiting User Input</h4>
+                        <p class="text-sm text-on-surface-variant max-w-sm">Write or paste a customer review into the
+                            bar on the left and click <strong>Process Review</strong> (or click a sample prompt) to
+                            display its AI Open Coding results here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Human + AI Theme Consolidation -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center">
+                    <span class="text-tertiary font-bold">4</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">Human + AI Theme Consolidation</h2>
+            </div>
+
+            <!-- Bar Chart Component -->
+            <div class="glass-panel p-8 rounded-2xl">
+                <h3 class="text-label-md text-on-surface-variant uppercase mb-8">Top 5 Behavioral Themes (Consolidated 1,024 Research Subset)</h3>
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-on-surface font-semibold">1. Authenticity &amp; Risk Perception</span>
+                            <span class="text-emerald-400 font-bold">143 Mentions (26.2%)</span>
+                        </div>
+                        <div class="h-2.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+                            <div class="h-full bg-emerald-400" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-on-surface font-semibold">2. Habit-Driven Utility Shopping</span>
+                            <span class="text-primary font-bold">137 Mentions (25.1%)</span>
+                        </div>
+                        <div class="h-2.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+                            <div class="h-full bg-primary" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-on-surface font-semibold">3. Experiential Micro-Sampling &amp; Trial</span>
+                            <span class="text-cyan-400 font-bold">115 Mentions (21.1%)</span>
+                        </div>
+                        <div class="h-2.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+                            <div class="h-full bg-cyan-400" style="width: 68%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-on-surface font-semibold">4. Late-Night Emergency Urgency</span>
+                            <span class="text-secondary font-bold">92 Mentions (16.9%)</span>
+                        </div>
+                        <div class="h-2.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+                            <div class="h-full bg-secondary" style="width: 52%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-on-surface font-semibold">5. Deals &amp; Cart Threshold Nudges</span>
+                            <span class="text-tertiary font-bold">58 Mentions (10.6%)</span>
+                        </div>
+                        <div class="h-2.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+                            <div class="h-full bg-tertiary" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Discovery Pathways Map -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center">
+                    <span class="text-tertiary font-bold">5</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">Discovery Pathways Map</h2>
+            </div>
+
+            <!-- Discovery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-primary group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-primary/10 rounded-lg group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-primary">search_insights</span>
+                        </div>
+                        <span
+                            class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">34
+                            Signals</span>
+                    </div>
+                    <h4 class="font-bold text-on-surface mb-2">Targeted Search</h4>
+                    <p class="text-sm text-on-surface-variant mb-4">Users enter Blinkit with a pre-decided product in mind, bypassing category exploration.</p>
+                    <button
+                        class="w-full py-2 border border-white/10 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Trigger
+                        Context</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-secondary">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-secondary/10 rounded-lg">
+                            <span class="material-symbols-outlined text-secondary">medical_services</span>
+                        </div>
+                        <span
+                            class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">115
+                            Signals</span>
+                    </div>
+                    <h4 class="font-bold text-on-surface mb-2">Emergency Panic</h4>
+                    <p class="text-sm text-on-surface-variant mb-4">High-urgency situational needs occurring late at night where speed overrides product comparison.</p>
+                    <button
+                        class="w-full py-2 border border-white/10 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Trigger
+                        Context</button>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-tertiary">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-tertiary/10 rounded-lg">
+                            <span class="material-symbols-outlined text-tertiary">sell</span>
+                        </div>
+                        <span
+                            class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">105
+                            Signals</span>
+                    </div>
+                    <h4 class="font-bold text-on-surface mb-2">Deals Exploration</h4>
+                    <p class="text-sm text-on-surface-variant mb-4">Price-sensitive browsing triggered by cart threshold gaps and value nudges rather than intent.</p>
+                    <button
+                        class="w-full py-2 border border-white/10 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Trigger
+                        Context</button>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-white/20">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-white/5 rounded-lg">
+                            <span class="material-symbols-outlined text-on-surface">forum</span>
+                        </div>
+                        <span
+                            class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">32
+                            Signals</span>
+                    </div>
+                    <h4 class="font-bold text-on-surface mb-2">Word of Mouth</h4>
+                    <p class="text-sm text-on-surface-variant mb-4">External social proof and viral trends driving intent-driven searches for trending items.</p>
+                    <button
+                        class="w-full py-2 border border-white/10 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Trigger
+                        Context</button>
+                </div>
+                <!-- Card 5 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-primary/60">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-primary/10 rounded-lg">
+                            <span class="material-symbols-outlined text-primary/60">home_app_logo</span>
+                        </div>
+                        <span
+                            class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">65
+                            Signals</span>
+                    </div>
+                    <h4 class="font-bold text-on-surface mb-2">Homepage Serendipity</h4>
+                    <p class="text-sm text-on-surface-variant mb-4">Unplanned, low-intent visual scrolling resulting in trial-inducing impulse purchases.</p>
+                    <button
+                        class="w-full py-2 border border-white/10 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Trigger
+                        Context</button>
+                </div>
+                <!-- Card 6 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-secondary/60">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-secondary/10 rounded-lg">
+                            <span class="material-symbols-outlined text-secondary/60">calendar_month</span>
+                        </div>
+                        <span
+                            class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">7
+                            Signals</span>
+                    </div>
+                    <h4 class="font-bold text-on-surface mb-2">Seasonality</h4>
+                    <p class="text-sm text-on-surface-variant mb-4">Contextual environmental triggers (festivals, weather shifts) driving immediate category demand spikes.</p>
+                    <button
+                        class="w-full py-2 border border-white/10 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Trigger
+                        Context</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: AI Insight Generation & Strategy -->
+        <section class="space-y-8">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 rounded-lg bg-emerald-400/20 flex items-center justify-center border border-emerald-400/40">
+                    <span class="text-emerald-400 font-bold">6</span>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">AI Insight Generation &amp; Strategy
+                    </h2>
+                    <p class="text-sm text-on-surface-variant mt-0.5">Synthesizing qualitative review clusters and
+                        operational discovery channels into PM product opportunities.</p>
+                </div>
+            </div>
+
+            <!-- Methodology Synthesis Explanation -->
+            <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-5 flex items-start gap-4 shadow-lg backdrop-blur-md">
+                <div class="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-400 shrink-0 border border-emerald-500/30">
+                    <span class="material-symbols-outlined text-2xl">psychology_alt</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-xs font-bold text-emerald-400 tracking-widest uppercase font-mono">AI Behavioral Synthesis Engine</span>
+                        <span class="bg-emerald-500/20 text-emerald-300 text-[10px] px-2.5 py-0.5 rounded font-mono font-bold border border-emerald-500/30">18 INSIGHTS GENERATED</span>
+                    </div>
+                    <p class="text-sm text-emerald-200 leading-relaxed font-sans">
+                        AI synthesized 18 behavioral insights from 1,024 retained reviews. Insights are ranked using a weighted composite score (40% PM Strategic Leverage, 30% Evidence Strength &amp; Frequency, 30% Business Upside) — prioritizing high-leverage transaction moments over raw mention frequency alone. Top 3 representative outputs shown below:
+                    </p>
+                </div>
+            </div>
+
+            <!-- Insight Cards Container -->
+            <div class="space-y-6">
+                <!-- Insight 1 Card -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden space-y-4 border-emerald-500/30">
+                    <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400 font-bold text-base">✓ Insight 1</span>
+                            <span class="text-xs font-mono text-on-surface-variant bg-white/5 px-2.5 py-1 rounded-md border border-white/10">Habitual Reorder Lock-in</span>
+                        </div>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold border border-emerald-500/30">TOP RANKED (Composite Score: 9.4/10 | 137 Mentions)</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-primary tracking-widest uppercase">Observation</h5>
+                            <p class="text-on-surface text-sm font-medium leading-relaxed">Habitual shoppers bypass top-of-funnel discovery banners during routine staple reorders.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-secondary tracking-widest uppercase">Evidence</h5>
+                            <p class="text-on-surface-variant text-xs leading-relaxed">137 mentions of strict list adherence, autopilot reordering, and deliberate avoidance of homepage ads.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-tertiary tracking-widest uppercase">Explanation</h5>
+                            <p class="text-on-surface-variant text-xs leading-relaxed">Users open Blinkit with single-minded utility intent, bypassing traditional merchandising carousels.</p>
+                        </div>
+                        <div class="bg-primary/10 p-5 rounded-xl border border-primary/20 flex flex-col justify-center">
+                            <h5 class="text-xs font-bold text-primary tracking-widest uppercase mb-1">🚀 Product Opportunity</h5>
+                            <p class="text-on-surface text-xs font-bold leading-relaxed">Position contextual non-grocery recommendations at cart threshold review during staple reorders.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insight 2 Card -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden space-y-4 border-emerald-500/30">
+                    <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400 font-bold text-base">✓ Insight 2</span>
+                            <span class="text-xs font-mono text-on-surface-variant bg-white/5 px-2.5 py-1 rounded-md border border-white/10">Authenticity &amp; Risk Perception</span>
+                        </div>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold border border-emerald-500/30">RANK #2 (Composite Score: 9.1/10 | 143 Mentions)</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-primary tracking-widest uppercase">Observation</h5>
+                            <p class="text-on-surface text-sm font-medium leading-relaxed">High-margin non-grocery categories (skincare, electronics) suffer severe conversion drop-offs.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-secondary tracking-widest uppercase">Evidence</h5>
+                            <p class="text-on-surface-variant text-xs leading-relaxed">143 mentions highlighting fear of fake items (CeraVe/boAt), unboxing seal doubts, and return policies.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-tertiary tracking-widest uppercase">Explanation</h5>
+                            <p class="text-on-surface-variant text-xs leading-relaxed">Users trust Blinkit for low-risk consumables but perceive non-groceries as high-risk assets needing proof.</p>
+                        </div>
+                        <div class="bg-primary/10 p-5 rounded-xl border border-primary/20 flex flex-col justify-center">
+                            <h5 class="text-xs font-bold text-primary tracking-widest uppercase mb-1">🚀 Product Opportunity</h5>
+                            <p class="text-on-surface text-xs font-bold leading-relaxed">Display platform-backed '100% Brand Direct &amp; Sealed Unboxing Guarantee' badges on product pages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insight 3 Card -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden space-y-4 border-emerald-500/30">
+                    <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400 font-bold text-base">✓ Insight 3</span>
+                            <span class="text-xs font-mono text-on-surface-variant bg-white/5 px-2.5 py-1 rounded-md border border-white/10">Experiential Micro-Sampling</span>
+                        </div>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold border border-emerald-500/30">RANK #3 (Composite Score: 8.8/10 | 115 Mentions)</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-primary tracking-widest uppercase">Observation</h5>
+                            <p class="text-on-surface text-sm font-medium leading-relaxed">Quality skepticism and browsing hesitation block first-time non-grocery trials.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-secondary tracking-widest uppercase">Evidence</h5>
+                            <p class="text-on-surface-variant text-xs leading-relaxed">Survey requests for ₹1 trial samples + interview preference for physical micro-testers before full-size commitment.</p>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h5 class="text-xs font-bold text-tertiary tracking-widest uppercase">Explanation</h5>
+                            <p class="text-on-surface-variant text-xs leading-relaxed">Low-commitment physical samples eliminate quality doubt for high-friction categories like skincare and produce.</p>
+                        </div>
+                        <div class="bg-primary/10 p-5 rounded-xl border border-primary/20 flex flex-col justify-center">
+                            <h5 class="text-xs font-bold text-primary tracking-widest uppercase mb-1">🚀 Product Opportunity</h5>
+                            <p class="text-on-surface text-xs font-bold leading-relaxed">Deliver automated free mini sample add-ons with qualifying orders to trigger post-trial repeat adoption.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 6 -> Stage 7 Visual Transition Bridge -->
+        <div class="relative py-4">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-cyan-500/30"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <div
+                    class="bg-surface-container-high border border-cyan-500/50 rounded-full px-6 py-2 flex items-center gap-3 shadow-2xl backdrop-blur-md">
+                    <span class="material-symbols-outlined text-cyan-400 text-base animate-pulse">psychology</span>
+                    <span class="text-xs font-bold text-cyan-300 font-mono tracking-wider uppercase">AI Behavioral
+                        Synthesis Transition Step</span>
+                    <span class="material-symbols-outlined text-cyan-400 text-base">arrow_downward</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7: AI Hypothesis Generation -->
+        <section class="space-y-8">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 rounded-lg bg-cyan-400/20 flex items-center justify-center border border-cyan-400/40">
+                    <span class="text-cyan-400 font-bold">7</span>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">AI Hypothesis Generation</h2>
+                    <p class="text-sm text-on-surface-variant mt-0.5">Formulating testable strategic hypotheses from
+                        synthesized behavioral patterns before primary validation.</p>
+                </div>
+            </div>
+
+            <!-- Transition Banner -->
+            <div
+                class="bg-gradient-to-r from-primary/20 via-cyan-500/15 to-emerald-500/20 border border-cyan-500/40 rounded-2xl p-6 flex items-start sm:items-center gap-4 shadow-xl backdrop-blur-md">
+                <div class="p-3 bg-cyan-500/20 rounded-xl text-cyan-300 shrink-0 border border-cyan-500/30">
+                    <span class="material-symbols-outlined text-2xl">auto_awesome</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-mono">Stage 6 ➔
+                            Stage 7 Transition</span>
+                        <span
+                            class="bg-cyan-500/20 text-cyan-300 text-[10px] px-2.5 py-0.5 rounded font-mono font-bold border border-cyan-500/30">BEHAVIORAL
+                            SYNTHESIS</span>
+                    </div>
+                    <p class="text-base font-semibold text-on-surface leading-relaxed">
+                        AI synthesized recurring behavioral patterns into testable product hypotheses (HYP-1 to HYP-3)
+                        ready for primary research validation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hypothesis Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- HYP-1 -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between hover:bg-white/5 transition-all">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-label-md text-primary font-bold">HYP-1</span>
+                            <span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">stars</span>
+                        </div>
+                        <div class="mb-4 bg-cyan-500/10 border border-cyan-500/20 rounded-xl p-3 space-y-1 text-[11px] font-mono text-cyan-300">
+                            <div class="font-bold text-cyan-400 uppercase text-[10px] tracking-wider mb-1 flex items-center gap-1">
+                                <span class="material-symbols-outlined text-xs">account_tree</span> Built from:
+                            </div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Theme 2: Habit-Driven Utility Shopping</div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Discovery Channel 3: Cart Threshold Nudges</div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Insight 1: Habitual Reorder Lock-in</div>
+                        </div>
+                        <h4 class="font-headline-sm font-bold text-on-surface mb-2">Target Hypothesis: "Contextual discovery moments at cart review during staple reorders increase basket adoption."</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mt-3">
+                            <strong>IF</strong> we introduce relevant non-grocery category recommendations at the cart review screen when a user reorders weekly staples, <strong>THEN</strong> cross-category basket adoption will significantly increase among habitual shoppers.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/5 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-on-surface-variant">Expected Impact</span>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-1 rounded">High (Basket Adoption)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-on-surface-variant">Confidence Score</span>
+                            <div class="flex gap-1">
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                                <div class="w-4 h-1.5 rounded-full bg-primary/20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HYP-2 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl flex flex-col justify-between hover:bg-white/5 transition-all border-primary/40">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-label-md text-primary font-bold">HYP-2</span>
+                            <span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">shield</span>
+                        </div>
+                        <div class="mb-4 bg-cyan-500/10 border border-cyan-500/20 rounded-xl p-3 space-y-1 text-[11px] font-mono text-cyan-300">
+                            <div class="font-bold text-cyan-400 uppercase text-[10px] tracking-wider mb-1 flex items-center gap-1">
+                                <span class="material-symbols-outlined text-xs">account_tree</span> Built from:
+                            </div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Theme 1: Authenticity &amp; Risk Perception</div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Discovery Channel 1: Targeted Search</div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Insight 2: Authenticity &amp; Risk Perception</div>
+                        </div>
+                        <h4 class="font-headline-sm font-bold text-on-surface mb-2">Target Hypothesis: "Platform-backed authenticity verification bridges perceived risk in high-value non-groceries."</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mt-3">
+                            <strong>IF</strong> we display a '100% Brand Authorized & Sealed Unboxing Guarantee' badge on beauty and electronics product pages, <strong>THEN</strong> conversion rate for first-time non-grocery buyers will improve markedly.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/5 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-on-surface-variant">Expected Impact</span>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-1 rounded">High (Conversion Lift)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-on-surface-variant">Confidence Score</span>
+                            <div class="flex gap-1">
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HYP-3 -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between hover:bg-white/5 transition-all">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-label-md text-primary font-bold">HYP-3</span>
+                            <span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">science</span>
+                        </div>
+                        <div class="mb-4 bg-cyan-500/10 border border-cyan-500/20 rounded-xl p-3 space-y-1 text-[11px] font-mono text-cyan-300">
+                            <div class="font-bold text-cyan-400 uppercase text-[10px] tracking-wider mb-1 flex items-center gap-1">
+                                <span class="material-symbols-outlined text-xs">account_tree</span> Built from:
+                            </div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Theme 3: Experiential Micro-Sampling &amp; Trial</div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Discovery Channel 5: Trial Sampling</div>
+                            <div class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">✓</span> Insight 3: Experiential Micro-Sampling</div>
+                        </div>
+                        <h4 class="font-headline-sm font-bold text-on-surface mb-2">Target Hypothesis: "Low-commitment micro-samples and trial add-ons override browsing hesitation for high-doubt categories."</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mt-3">
+                            <strong>IF</strong> we deliver co-branded free mini samples and micro-trial options with qualifying orders, <strong>THEN</strong> trial adoption rates for new non-grocery categories will significantly increase among skeptical shoppers.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/5 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-on-surface-variant">Expected Impact</span>
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-1 rounded">High (Trial Rate Lift)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-on-surface-variant">Confidence Score</span>
+                            <div class="flex gap-1">
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                                <div class="w-4 h-1.5 rounded-full bg-primary"></div>
+                                <div class="w-4 h-1.5 rounded-full bg-primary/20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Primary Research Validation -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center">
+                    <span class="text-emerald-400 font-bold">8</span>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+                        <span>Primary Research Validation</span>
+                        <span
+                            class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-bold border border-emerald-500/40">USER
+                            INTERVIEWS + SURVEY RESPONSES</span>
+                    </h2>
+                    <p class="text-sm text-on-surface-variant mt-1">Cross-referencing AI-generated hypotheses against 7
+                        Primary Survey responses and 7 Candidate In-Depth Interview transcripts.</p>
+                </div>
+            </div>
+
+            <div id="primary-validation-container" class="grid grid-cols-1 gap-6">
+                <!-- VAL-1 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl space-y-4 border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50 transition-all">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase font-mono">VAL-1 ➔
+                            HYP-1</span>
+                        <span
+                            class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 px-3 py-0.5 rounded-full text-xs font-bold">VALIDATED
+                            (Strong Alignment)</span>
+                    </div>
+                    <h4 class="text-base font-bold text-on-surface">Target Hypothesis: "Contextual discovery moments at
+                        cart review during staple reorders increase basket adoption."</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-1">
+                            <strong class="text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">assignment</span> Survey Findings (7
+                                Responses):</strong>
+                            <p class="text-on-surface-variant leading-relaxed">Survey respondents reorder
+                                the same staples (50-75% cart overlap) and open the app with pre-decided intent.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-1">
+                            <strong class="text-secondary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">record_voice_over</span> User Interview
+                                Evidence (7 Candidates):</strong>
+                            <p class="text-on-surface-variant leading-relaxed italic">Interview 1 & 5 confirmed: "I open
+                                Blinkit to purchase pre-decided items... suggest other categories on the cart review
+                                screen based on previous shopping journey."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VAL-2 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl space-y-4 border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50 transition-all">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase font-mono">VAL-2 ➔
+                            HYP-2</span>
+                        <span
+                            class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 px-3 py-0.5 rounded-full text-xs font-bold">VALIDATED
+                            (Strong Alignment)</span>
+                    </div>
+                    <h4 class="text-base font-bold text-on-surface">Target Hypothesis: "Platform-backed authenticity
+                        verification bridges perceived risk in high-value non-groceries."</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-1">
+                            <strong class="text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">assignment</span> Survey Findings (7
+                                Responses):</strong>
+                            <p class="text-on-surface-variant leading-relaxed">Survey respondents cite "I don't trust
+                                unfamiliar products" or "Uncertain authenticity" as the main barrier preventing
+                                non-grocery trials.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-1">
+                            <strong class="text-secondary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">record_voice_over</span> User Interview
+                                Evidence (7 Candidates):</strong>
+                            <p class="text-on-surface-variant leading-relaxed italic">Interview 1 & 4 confirmed: "My
+                                past experience has been good with Blinkit... I trust Blinkit rather than any brand who
+                                is selling inside it because of easy return policy."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VAL-3 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl space-y-4 border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50 transition-all">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase font-mono">VAL-3 ➔
+                            HYP-3</span>
+                        <span
+                            class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 px-3 py-0.5 rounded-full text-xs font-bold">VALIDATED
+                            (Strong Alignment)</span>
+                    </div>
+                    <h4 class="text-base font-bold text-on-surface">Target Hypothesis: "Low-commitment micro-samples and trial add-ons override browsing hesitation for high-doubt categories."</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-1">
+                            <strong class="text-primary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">assignment</span> Survey Findings (7
+                                Responses):</strong>
+                            <p class="text-on-surface-variant leading-relaxed">Survey respondents requested a dedicated
+                                hub ('Blinkit Binge') and ₹1/free sample add-ons when cart reaches threshold.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-1">
+                            <strong class="text-secondary flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">record_voice_over</span> User Interview
+                                Evidence (7 Candidates):</strong>
+                            <p class="text-on-surface-variant leading-relaxed italic">Interview 3 & 4 confirmed: "If
+                                Blinkit can send me a free sample of a new category (like fruits/veg or skincare), I
+                                might give it a try next time."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Validated Opportunity Areas -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center">
+                    <span class="text-tertiary font-bold">9</span>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Validated Opportunity Areas</h2>
+                    <p class="text-sm text-on-surface-variant mt-1">High-level strategic investment pillars derived from primary research. Answers: <em>Where should Blinkit invest product focus &amp; resources?</em></p>
+                </div>
+            </div>
+
+            <div id="validated-opportunities-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- OPP-1 -->
+                <div class="glass-panel p-6 rounded-2xl space-y-4 border-tertiary/30 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-tertiary uppercase tracking-wider">OPP-1</span>
+                            <span
+                                class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded text-[11px] font-bold">Habit-Driven
+                                &amp; Need-Based Shoppers</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-on-surface">1. Checkout as a Discovery Surface</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed"><strong>Validated Insight:</strong>
+                            Habitual shoppers bypass top-of-funnel carousels and homepage banners; cross-category discovery must shift to high-intent transaction touchpoints.</p>
+                        <div
+                            class="bg-tertiary/10 p-3 rounded-xl border border-tertiary/20 text-xs text-tertiary font-medium">
+                            🎯 <strong>Strategic Pillar:</strong> Intercept existing high-frequency staple checkout flows where basket building naturally occurs.
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-2">
+                        <div class="text-xs font-bold text-emerald-400 uppercase font-mono tracking-wider flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">rocket_launch</span> Strategic Rationale (Why Now?)
+                        </div>
+                        <ul class="text-xs text-on-surface-variant space-y-1 font-sans">
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> High-frequency repeat traffic (50–75% staple cart overlap)</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Existing checkout intent (zero acquisition cost)</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> High basket expansion &amp; AOV upside</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Capitalizes on natural threshold gaps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OPP-2 -->
+                <div class="glass-panel p-6 rounded-2xl space-y-4 border-tertiary/30 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-tertiary uppercase tracking-wider">OPP-2</span>
+                            <span
+                                class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded text-[11px] font-bold">Risk-Averse
+                                Non-Grocery Buyers</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-on-surface">2. Platform-Backed Risk Reduction</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed"><strong>Validated Insight:</strong> Conversion in high-margin non-grocery categories is constrained by perceived product authenticity risk and return asymmetry.</p>
+                        <div
+                            class="bg-tertiary/10 p-3 rounded-xl border border-tertiary/20 text-xs text-tertiary font-medium">
+                            🎯 <strong>Strategic Pillar:</strong> Leveraging baseline Blinkit platform trust to neutralize category-level purchase hesitation.
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-2">
+                        <div class="text-xs font-bold text-emerald-400 uppercase font-mono tracking-wider flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">rocket_launch</span> Strategic Rationale (Why Now?)
+                        </div>
+                        <ul class="text-xs text-on-surface-variant space-y-1 font-sans">
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Strategic expansion into high-margin beauty &amp; tech</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Leverages high baseline Blinkit delivery &amp; service trust</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Removes psychological barriers preventing high-ticket orders</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Protects long-term customer retention</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OPP-3 -->
+                <div class="glass-panel p-6 rounded-2xl space-y-4 border-tertiary/30 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-tertiary uppercase tracking-wider">OPP-3</span>
+                            <span
+                                class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded text-[11px] font-bold">Produce
+                                &amp; Skincare Skeptics</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-on-surface">3. Low-Friction Trial &amp; Demand Activation</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed"><strong>Validated Insight:</strong>
+                            Quality skepticism and browsing hesitation are best overcome through low-friction physical trial and high-urgency situational activation.
+                        </p>
+                        <div
+                            class="bg-tertiary/10 p-3 rounded-xl border border-tertiary/20 text-xs text-tertiary font-medium">
+                            🎯 <strong>Strategic Pillar:</strong> Lowering the barrier to category entry through experiential sampling and instant urgency pathways.
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 space-y-2">
+                        <div class="text-xs font-bold text-emerald-400 uppercase font-mono tracking-wider flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">rocket_launch</span> Strategic Rationale (Why Now?)
+                        </div>
+                        <ul class="text-xs text-on-surface-variant space-y-1 font-sans">
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Strong user demand for risk-free category trial</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Brand partners motivated to co-fund sample distribution</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Zero incremental logistics cost via existing delivery network</li>
+                            <li class="flex items-center gap-1.5"><span class="text-emerald-400 font-bold">•</span> Unlocks multi-category customer Lifetime Value (LTV)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Product Solutions & Strategy -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <span class="text-primary font-bold">10</span>
+                </div>
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Product Solutions &amp; Strategy
+                    </h2>
+                    <p class="text-sm text-on-surface-variant mt-1">Concrete UI features, tactical specs, and key results executing Stage 9 strategic opportunity pillars. Answers: <em>How do we build it?</em></p>
+                </div>
+            </div>
+
+            <div id="product-solutions-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- SOL-1 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl space-y-4 border-primary/30 bg-primary/5 hover:border-primary/60 transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-primary font-mono uppercase">SOL-1 ➔ OPP-1</span>
+                            <span
+                                class="bg-primary/20 text-primary-fixed-dim px-2.5 py-0.5 rounded text-[11px] font-bold">Checkout UI Component</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-on-surface">Build Smart Cart Threshold Fillers</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Algorithmic cart nudging system that detects ₹30–₹70 gaps to free delivery and recommends 1-tap add-on items (lip balms, batteries, cables) on the cart review screen.</p>
+                    </div>
+                    <div class="bg-emerald-500/10 p-4 rounded-xl border border-emerald-500/20 space-y-2">
+                        <div class="text-xs font-bold text-emerald-400 uppercase font-mono tracking-wider flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">monitoring</span> Target Product Success Metrics
+                        </div>
+                        <ul class="text-xs font-medium space-y-1">
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> Basket Adoption Rate</li>
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> Average Order Value (AOV)</li>
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> New Category First-Trial Rate</li>
+                            <li class="flex items-center gap-1.5 text-cyan-300 border-t border-white/10 pt-1 mt-1"><span class="font-bold">↓</span> No Increase in Checkout Abandonment (Guardrail)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SOL-2 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl space-y-4 border-primary/30 bg-primary/5 hover:border-primary/60 transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-primary font-mono uppercase">SOL-2 ➔ OPP-2</span>
+                            <span
+                                class="bg-primary/20 text-primary-fixed-dim px-2.5 py-0.5 rounded text-[11px] font-bold">PDP Verification Badges</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-on-surface">Implement Category Trust Badges &amp; Unboxing Guarantees</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Prominent '100% Brand Direct Authorized' trust seals, 24-hr instant replacement badges, and sealed unboxing guarantees rendered directly on Product Detail Pages (PDPs).</p>
+                    </div>
+                    <div class="bg-emerald-500/10 p-4 rounded-xl border border-emerald-500/20 space-y-2">
+                        <div class="text-xs font-bold text-emerald-400 uppercase font-mono tracking-wider flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">monitoring</span> Target Product Success Metrics
+                        </div>
+                        <ul class="text-xs font-medium space-y-1">
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> PDP Conversion Rate (Beauty &amp; Tech)</li>
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> Brand Direct Trust Perception Index</li>
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↓</span> High-Value Cart Drop-off Rate</li>
+                            <li class="flex items-center gap-1.5 text-cyan-300 border-t border-white/10 pt-1 mt-1"><span class="font-bold">↓</span> No Spike in Unjustified Return Claims (Guardrail)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SOL-3 -->
+                <div
+                    class="glass-panel p-6 rounded-2xl space-y-4 border-primary/30 bg-primary/5 hover:border-primary/60 transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-bold text-primary font-mono uppercase">SOL-3 ➔ OPP-3</span>
+                            <span
+                                class="bg-primary/20 text-primary-fixed-dim px-2.5 py-0.5 rounded text-[11px] font-bold">Homepage &amp; Fulfillment Flow</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-on-surface">Launch 1-Tap Emergency Shortcuts &amp; Sample Add-on Gateway</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Dynamic late-night home screen banner (11 PM - 4 AM) for urgent essentials + automated ₹1 sample packaging in dispatch bags for qualifying cart thresholds.</p>
+                    </div>
+                    <div class="bg-emerald-500/10 p-4 rounded-xl border border-emerald-500/20 space-y-2">
+                        <div class="text-xs font-bold text-emerald-400 uppercase font-mono tracking-wider flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">monitoring</span> Target Product Success Metrics
+                        </div>
+                        <ul class="text-xs font-medium space-y-1">
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> Late-Night Emergency Order Completion</li>
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> Post-Trial Repeat Adoption Rate</li>
+                            <li class="flex items-center gap-1.5 text-emerald-300"><span class="font-bold">↑</span> Discovery Hub Click-Through Rate (CTR)</li>
+                            <li class="flex items-center gap-1.5 text-cyan-300 border-t border-white/10 pt-1 mt-1"><span class="font-bold">↓</span> Zero Late-Night Fulfillment SLA Breach (Guardrail)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+
+    <script>
+        // Micro-interactions and subtle glow effects
+        document.querySelectorAll('.glass-panel').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'all 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+    <script src="data.js?v=20260727_2"></script>
+    <script src="app.js?v=20260727_2"></script>
+</body>
+
+</html>

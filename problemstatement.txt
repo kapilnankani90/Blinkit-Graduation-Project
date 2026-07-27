@@ -1,0 +1,31 @@
+you must build an AI-powered system that analyzes user feedback at scale. 
+The goal is to analyze:
+App Store reviews
+Play Store reviews
+Reddit discussions
+Community forums
+Social media conversations
+Product reviews
+Quick-commerce discussions
+Your discovery engine should help answer questions such as:
+Why do users repeatedly buy from the same categories?
+What prevents users from exploring new categories?
+How do users discover products today?
+What role do habits play in shopping behavior?
+What information do users need before trying a new category?
+What frustrations emerge repeatedly?
+Which user segments are more likely to experiment?
+What unmet needs emerge consistently across discussions?
+One of the company's strategic goals is to:
+Increase the percentage of Monthly Active Customers who purchase products from at least one new category every month.
+We have already segmented user and chosen habit driven shoppers so now the probloem statement is
+How do habit-driven Blinkit shoppers make purchase decisions, what keeps them returning to familiar product categories, and what motivates them to explore and purchase from new categories? 
+our AI Discovery Engine and should aim to answer the following:
+Understand the current shopping journey of habit-driven Blinkit shoppers and how they make purchase decisions.
+Identify why users repeatedly purchase from the same product categories and how shopping habits influence their behavior.
+Identify the barriers that prevent users from exploring and purchasing products from new categories.
+Understand how users currently discover new products or categories, both within and outside Blinkit.
+Identify the information, trust signals, or reassurance users need before trying a product from an unfamiliar category.
+Discover recurring frustrations and unmet needs related to product discovery and category exploration.
+Identify which user characteristics or shopping behaviors make some users more willing to experiment than others.
+Identify the moments in the shopping journey where users are most receptive to discovering and purchasing products from new categories.
